@@ -13,8 +13,8 @@ function App() {
     <div className="flex flex-col md:flex-row h-screen w-screen bg-lab-black text-white font-sans overflow-hidden">
       {/* Sticky Mobile Header */}
       <div className="md:hidden flex items-center justify-between p-4 bg-white border-b-4 border-gray-100 z-30">
-        <div className="bg-natgeo-yellow px-2 py-1 border-2 border-black font-black text-black text-xs">
-          NAT GEO KIDS LAB
+        <div className="flex-1">
+          <img src="/logo.png" alt="National Geographic Kids" className="h-8 md:h-10 w-auto object-contain" />
         </div>
         <button 
           onClick={() => setIsSidebarOpen(true)}
