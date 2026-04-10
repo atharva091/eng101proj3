@@ -31,6 +31,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
           </div>
         )}
         <p className="text-[10px] font-bold text-gray-500 tracking-[0.3em] mt-2 uppercase">Health Lab</p>
+        <p className="text-[9px] font-medium text-gray-400 mt-1 uppercase tracking-wider">Programmed and Deployed by Atharva Neelabh</p>
       </div>
 
       <nav className="flex flex-col gap-3">
