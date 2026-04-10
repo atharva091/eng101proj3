@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #F39C12 0%, #E67E22 100%);
+  background-attachment: fixed;
+}
+
+@layer components {
+  .bento-card {
+    @apply bg-white rounded-2xl p-6 shadow-lg border-4 border-white transition-all duration-300;
+  }
+  
+  .glass-button {
+    @apply bg-natgeo-brown text-white hover:bg-black rounded-lg px-6 py-3 transition-all font-bold uppercase tracking-wider;
+  }
+
+  .neon-border-blue {
+    @apply border-white;
+  }
+
+  .natgeo-box {
+    @apply bg-natgeo-yellow border-4 border-black inline-block px-4 py-2;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFCC00;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E6B800;
+}
