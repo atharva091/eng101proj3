@@ -10,12 +10,12 @@ const MealLab = () => {
   ];
 
   return (
-    <div className="flex-1 p-8 overflow-y-auto">
-      <header className="mb-10 border-b-4 border-black/5 pb-6">
-        <h2 className="text-4xl font-black text-white tracking-tight leading-none drop-shadow-md">
+    <div className="flex-1 p-4 md:p-8 overflow-y-auto">
+      <header className="mb-6 md:mb-10 border-b-4 border-black/5 pb-6">
+        <h2 className="text-2xl md:text-4xl font-black text-white tracking-tight leading-none drop-shadow-md">
           MEAL LAB: <span className="text-natgeo-yellow">ACTIVE EXPERIMENTS</span>
         </h2>
-        <p className="text-white/80 font-bold mt-2 italic">PROTOCOL: MOLECULAR GASTRONOMY FOR EXPLORERS</p>
+        <p className="text-white/80 font-bold mt-2 text-xs md:text-sm italic uppercase">PROTOCOL: MOLECULAR GASTRONOMY FOR EXPLORERS</p>
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -35,10 +35,10 @@ const MealLab = () => {
           </motion.div>
         ))}
 
-        <div className="md:col-span-3 bento-card bg-natgeo-brown text-white h-64 flex flex-col items-center justify-center text-center">
-          <Microscope size={64} className="text-natgeo-yellow mb-4 animate-pulse" />
-          <h3 className="text-3xl font-black uppercase mb-2">Advanced Food Scanner</h3>
-          <p className="max-w-md text-gray-400 font-medium">This module is currently calibrating for high-altitude snacks. Check back after your next Everest mission!</p>
+        <div className="md:col-span-3 bento-card bg-natgeo-brown text-white py-12 md:h-64 flex flex-col items-center justify-center text-center px-6">
+          <Microscope size={48} className="text-natgeo-yellow mb-4 animate-pulse md:w-16 md:h-16" />
+          <h3 className="text-xl md:text-3xl font-black uppercase mb-2">Advanced Food Scanner</h3>
+          <p className="max-w-md text-gray-400 font-medium text-xs md:text-base">This module is currently calibrating for high-altitude snacks. Check back after your next Everest mission!</p>
         </div>
       </div>
     </div>

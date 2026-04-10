@@ -10,26 +10,26 @@ const HeartStats = () => {
   ];
 
   return (
-    <div className="flex-1 p-8 overflow-y-auto">
-      <header className="mb-10 border-b-4 border-black/5 pb-6">
-        <h2 className="text-4xl font-black text-white tracking-tight leading-none drop-shadow-md">
+    <div className="flex-1 p-4 md:p-8 overflow-y-auto w-full">
+      <header className="mb-6 md:mb-10 border-b-4 border-black/5 pb-6">
+        <h2 className="text-2xl md:text-4xl font-black text-white tracking-tight leading-none drop-shadow-md">
           HEART STATS: <span className="text-natgeo-yellow">VITAL SIGNS</span>
         </h2>
-        <p className="text-white/80 font-bold mt-2 italic">BIO-METRIC TELEMETRY FOR FIELD AGENTS</p>
+        <p className="text-white/80 font-bold mt-2 text-xs md:text-sm italic uppercase">BIO-METRIC TELEMETRY FOR FIELD AGENTS</p>
       </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bento-card relative h-80 flex flex-col items-center justify-center border-none overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pb-10">
+        <div className="bento-card relative h-64 md:h-80 flex flex-col items-center justify-center border-none overflow-hidden">
            <div className="absolute inset-0 bg-gray-50/50 -z-10" />
            <motion.div 
              animate={{ scale: [1, 1.1, 1] }}
              transition={{ duration: 0.8, repeat: Infinity }}
-             className="text-red-500 mb-4"
+             className="text-red-500 mb-2 md:mb-4"
            >
-             <HeartPulse size={120} />
+             <HeartPulse size={80} className="md:w-32 md:h-32" />
            </motion.div>
-           <h3 className="text-5xl font-black text-natgeo-brown">72 <span className="text-xl text-gray-400">BPM</span></h3>
-           <p className="text-sm font-black text-gray-400 uppercase tracking-widest mt-2">Current Heart Rate</p>
+           <h3 className="text-4xl md:text-5xl font-black text-natgeo-brown">72 <span className="text-base md:text-xl text-gray-400">BPM</span></h3>
+           <p className="text-[10px] md:text-sm font-black text-gray-400 uppercase tracking-widest mt-1 md:mt-2">Current Heart Rate</p>
         </div>
 
         <div className="grid grid-cols-1 gap-6">
